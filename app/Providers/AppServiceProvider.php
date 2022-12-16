@@ -6,6 +6,8 @@ use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
+
+
     /**
      * Register any application services.
      *
@@ -22,7 +24,10 @@ class AppServiceProvider extends ServiceProvider
      * @return void
      */
     public function boot()
-    {
-        //
+    {//should pass data here instead of controllers?
+        $product= json_decode(file_get_contents(storage_path() . '/product.json'),true);
+
+        view()->share('productx', $product['contentElement']['values']['mediaCollection']);
+
     }
 }

@@ -14,12 +14,9 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <link href="{{ asset('css/menu.css') }}" rel="stylesheet">  
-    @livewireStyles
     <body>
         
-        @livewireScripts
         <nav id='header-nav'>
-
             <div><a href='/'>Home</a></div>
             <div id='nav-center'>
                 

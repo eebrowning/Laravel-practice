@@ -30,7 +30,6 @@
 
         @show
 
-        <livewire:alpine-practice />
 
 
         <div id='home-main'>

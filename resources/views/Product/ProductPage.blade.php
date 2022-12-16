@@ -30,6 +30,7 @@
         <title>{{$title}}</title>
 
         <link href="{{ asset('css/product.css') }}" rel="stylesheet">
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
     </head>
     <body >
@@ -38,9 +39,8 @@
     @show
     <div class="product-outer">
 
-        <div id='image-block'>
+        <!-- <div id='image-block'>            
             <img id='image-main' src='https://cdn.shopify.com/s/files/1/1065/4262/products/{{$mediaCollection[0]['name']}}?v={{$mediaCollection[0]['shopifyId']}}' alt=""/>
-
             <div id='image-options'>
                 @foreach($mediaCollection as $image)
                 <img src='https://cdn.shopify.com/s/files/1/1065/4262/products/{{$image['name']}}?v={{$image['shopifyId']}}' alt=""/>
@@ -48,7 +48,8 @@
                 
             </div>
             
-        </div>
+        </div> -->
+        <livewire:alpine-practice />
 
         <div class="product-info">
             <h1>{{$title}}</h1>

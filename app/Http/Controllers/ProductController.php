@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
+
     public function index()
     {
         $components= json_decode(file_get_contents(storage_path() . '/components.json'),true);
