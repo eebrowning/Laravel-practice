@@ -14,29 +14,33 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <link href="{{ asset('css/menu.css') }}" rel="stylesheet">  
-    
+    @livewireStyles
+    <body>
+        
+        @livewireScripts
+        <nav id='header-nav'>
 
-            <nav id='header-nav'>
-                <div><a href='/'>Home</a></div>
-                <div id='nav-center'>
-
-                    @foreach($primary_global_menu['items'] as $dropdown)
-                    
-                    <div class='dropdown-menu'>
-                        <a href="{{$dropdown['url']}}">{{$dropdown['title']}}</a>
-                        <div class='hover-content'>
-                            @foreach($dropdown['children'] as $thing)
-                            <a href="{{$dropdown['url']}}{{$thing['url']}}">{{$thing['title']}}</a>
-                            @endforeach
-                        </div>
+            <div><a href='/'>Home</a></div>
+            <div id='nav-center'>
+                
+                @foreach($primary_global_menu['items'] as $dropdown)
+                
+                <div class='dropdown-menu'>
+                    <a href="{{$dropdown['url']}}">{{$dropdown['title']}}</a>
+                    <div class='hover-content'>
+                        @foreach($dropdown['children'] as $thing)
+                        <a href="{{$dropdown['url']}}{{$thing['url']}}">{{$thing['title']}}</a>
+                        @endforeach
                     </div>
-                    @endforeach
                 </div>
-                <div id='nav-right'>
-
-                    <div>Search(todo)</div>
-                    <div>Language</div>
-                </div>
-            </nav>
-
+                @endforeach
+            </div>
+            <div id='nav-right'>
+                
+                <div>Search(todo)</div>
+                <div>Language</div>
+            </div>
+        </nav>
+    </body>
+        
 </html>

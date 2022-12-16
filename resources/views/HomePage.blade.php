@@ -21,12 +21,17 @@
         <title>{{$home['pageTitle']}}</title>
         
         <link href="{{ asset('css/home.css') }}" rel="stylesheet">
-
+        @livewireStyles
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
     <body class="antialiased">
+        @livewireScripts
         @include('./Menu/PrimaryMenu')
 
         @show
+
+        <livewire:alpine-practice />
+
 
         <div id='home-main'>
             <span id='heroes'>

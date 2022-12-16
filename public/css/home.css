@@ -27,6 +27,7 @@
     height: 44vw;
     overflow-y: scroll;
     overflow-x: hidden;
+
 }
 
 #blocks p {
@@ -39,4 +40,5 @@
     max-width: min-content; */
     width: 100vw;
     height: 44vw;
+    padding-top: 20px;
 }
