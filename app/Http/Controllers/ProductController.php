@@ -16,7 +16,7 @@ class ProductController extends Controller
         // echo "<pre>";
         // print_r($product);
 
-        return view("./Product/ProductPage",['product'=>$product,"primary_global_menu"=>$primary_global_menu]);
+        return view("./Product/ProductPage",['product'=>$product,"primary_global_menu"=>$primary_global_menu,'footer_menu'=>$footer_menu]);
     }
    
 }

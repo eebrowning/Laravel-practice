@@ -39,9 +39,8 @@
     <div class="product-outer">
 
         <div id='image-block'>
-            
-            <img id='image-main' src='https://cdn.shopify.com/s/files/1/1065/4262/products/1324200_fl1_031422.png?v=28764422013010' alt=""/>
-            
+            <img id='image-main' src='https://cdn.shopify.com/s/files/1/1065/4262/products/{{$mediaCollection[0]['name']}}?v={{$mediaCollection[0]['shopifyId']}}' alt=""/>
+
             <div id='image-options'>
                 @foreach($mediaCollection as $image)
                 <img src='https://cdn.shopify.com/s/files/1/1065/4262/products/{{$image['name']}}?v={{$image['shopifyId']}}' alt=""/>
@@ -65,7 +64,9 @@
 
         </div>
     </div>
+    @include('./Menu/FooterMenu')
 
+@show
     </body>
 </html>
 <!-- 

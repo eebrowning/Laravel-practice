@@ -8,17 +8,18 @@ use App\Http\Controllers\HomeController;
 // use App\Http\Controllers\ComponentController;
 use App\Http\Controllers\CatalogController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ErrorController;
+
 
 
 // Route::get("/catalog", [TestController::class, "index"]);
 Route::get("/", [HomeController::class, "index"]);
 //read about blades and how to nest them. not sure, but that may help.
-Route::get("/catalog", [CatalogController::class, "index"]);
+Route::get("/collections/all/catalog", [CatalogController::class, "index"]);
 Route::get('/catalog/{itemId}', [ProductController::class, "index"])->where('itemId','.+');
 
-Route::get('/404', function () {
-    return view('Error404');
-});
+// Route::get('/404', [ErrorController::class, "index"]);
+Route::any('{any}', [ErrorController::class, "index"])->where('any', '.*');
 
 
 // Route::get('/', function () {

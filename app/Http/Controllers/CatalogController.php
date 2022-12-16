@@ -17,7 +17,7 @@ class CatalogController extends Controller
         // echo "<pre>";
         // print_r($catalog);
 
-        return view("./Product/ProductCatalog",['catalog'=>$catalog, 'product'=>$product,"primary_global_menu"=>$primary_global_menu]);
+        return view("./Product/ProductCatalog",['catalog'=>$catalog, "primary_global_menu"=>$primary_global_menu,'footer_menu'=>$footer_menu]);
     }
    
 }

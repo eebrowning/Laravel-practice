@@ -19,24 +19,40 @@
     <head>
         <!-- <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <link href="{{ asset('css/catalog.css') }}" rel="stylesheet">
 
         <title>{{$title}}</title>
 
     </head>
-    <body class="antialiased">
     @include('../menu/PrimaryMenu')
+    @show
+<body>
 
-@show
+    <div class="catalog">
         <h1>{{$title}}</h1>
-
-        <div>
+        
         @for ($i=0 ; $i < sizeof($products) ; $i++)
-         <p>product Name: <a href='/catalog/{{$products[$i]['metadata']['id']}}'>{{$products[$i]['pageTitle']}}<a></p>
-         <p>product ID: {{$products[$i]['metadata']['id']}}</p>
-         
-         <p>product Link: <a href='{{$products[$i]['metadata']['link']}}'>{{$products[$i]['metadata']['link']}}<a></p>
+        <div class='product'>
+            <div id='image-block'>
+                <span style="display:none">
+                    {{$name=$products[$i]['contentElement']['values']['mediaCollection'][0]['name']}}
+                    {{$shopId=$products[$i]['contentElement']['values']['mediaCollection'][0]['shopifyId']}}
+                </span>
+            <img id='image-main' src='https://cdn.shopify.com/s/files/1/1065/4262/products/{{$name}}?v={{$shopId}}' alt=""/>
+                
+            </div>
+            <div class='product-detail'>
+                    <p>product page: <a href='/catalog/{{$products[$i]['metadata']['id']}}'>{{$products[$i]['pageTitle']}}<a></p>
+                    <p>product ID: {{$products[$i]['metadata']['id']}}</p>
+                    
+                    <p>product Link: <a href='{{$products[$i]['metadata']['link']}}'>{{$products[$i]['metadata']['link']}}<a></p>
 
-        @endfor
+            </div>
+
         </div>
-    </body>
+        @endfor
+</div>
+</body>
+    @include('./Menu/FooterMenu')
+    @show
 </html>

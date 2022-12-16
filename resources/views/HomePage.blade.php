@@ -17,8 +17,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta id= {{$home['metadata']['id']}}>
+        <meta type={{$home['pageType']}} id= {{$home['metadata']['id']}}>
         <title>{{$home['pageTitle']}}</title>
+        
         <link href="{{ asset('css/home.css') }}" rel="stylesheet">
 
     </head>
@@ -31,7 +32,9 @@
             <span id='heroes'>
 
                 @foreach ($heroes as $hero)
+                <div class= >
                     {!! $hero['content']['value'] !!}
+                </div>   
    
                 @endforeach
 
@@ -45,15 +48,13 @@
                 @endforeach
             </span>
 
-
-            <div id='content'>
-               <a href={!! $content['link'] !!}>Content Link</a>
-            </div>
-
         </div>
         <footer>
                 {{$footer}}
         </footer>
+        @include('./Menu/FooterMenu')
+
+@show
     </body>
 </html>
 
