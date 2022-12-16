@@ -1,0 +1,136 @@
+{
+    "pageType": "ProductPage",
+    "pageTitle": "FlavorWave Condoms",
+    "metadata": {
+        "id": 428,
+        "link": "https:\/\/gpg-staging-wordpress.onecondoms.com\/wp-admin\/post.php?post=428&action=edit",
+        "content": {
+            "value": "",
+            "checksum": 0,
+            "imageUrlMappings": []
+        },
+        "excerpt": {
+            "value": "",
+            "checksum": 0
+        },
+        "values": {
+            "currency": "$",
+            "twitterSite": "@ONECondoms",
+            "twitterCreator": "@ONECondoms",
+            "googleCondition": "New",
+            "googleAgeCategory": "Adult",
+            "googleGenderCategory": "Unisex"
+        }
+    },
+    "header": null,
+    "contentElement": {
+        "id": 451,
+        "link": "https:\/\/gpg-staging-wordpress.onecondoms.com\/wp-admin\/post.php?post=451&action=edit",
+        "content": {
+            "value": "",
+            "checksum": 0,
+            "imageUrlMappings": []
+        },
+        "excerpt": {
+            "value": "",
+            "checksum": 0
+        },
+        "values": {
+            "productSku": "3816903109",
+            "twitterCard": null,
+            "twitterCardImage": null,
+            "manufacturerPartNumber": null,
+            "tags": [
+                "12-packs",
+                "flavored-condoms",
+                "condoms"
+            ],
+            "googleProductCategory": null,
+            "googleColorCategory": null,
+            "googleMaterialCategory": null,
+            "googleUnitPricingMeasure": null,
+            "productSlug": null,
+            "mediumDescription": "<h3><strong>GET YOUR FLAVOR ON!<\/strong><\/h3>\n<b>ONE\u00ae FlavorWaves\u2122<\/b><span style=\"font-weight: 400;\"> condom 12-pack contains 6 delicious flavor experiences in unique colors. Includes: Chocolate Strawberry, Island Punch, Fresh Mint, Bubblegum, Mint Chocolate, and Banana Split. Safe for intercourse and contains no sugars. All ONE\u00ae Condoms feature Sensatex\u00ae ultra-soft latex for a more natural pleasure feeling. Pack of 12 condoms.<br><\/span>",
+            "mediaCollection": [
+                {
+                    "id": 87,
+                    "shopifyId": 28764422013010,
+                    "name": "1324200_fl1_031422.png"
+                },
+                {
+                    "id": 88,
+                    "shopifyId": 28316981723218,
+                    "name": "Condoms_FlavorWaves_Transparent_03a19c40-051d-437d-83ad-3c2032760f67.png"
+                },
+                {
+                    "id": 89,
+                    "shopifyId": 28764421980242,
+                    "name": "1324200_fl2_031422.png"
+                }
+            ],
+            "isVariant": false,
+            "productObject": {
+                "id": 25,
+                "uuid": "375148e4-ac77-46a5-b981-1d933dc61c7e",
+                "shopify_id": 3816903109,
+                "salesforce_product2_id": null,
+                "created_at": "2022-07-14T20:05:23.000000Z",
+                "updated_at": "2022-07-14T20:05:23.000000Z",
+                "status": false,
+                "tags": "12-packs, Flavored Condoms, Condoms",
+                "product_type": "Condoms",
+                "vendor": "ONE\u00ae",
+                "description": "<h3><strong>GET YOUR FLAVOR ON!<\/strong><\/h3>\n<b>ONE\u00ae FlavorWaves\u2122<\/b><span style=\"font-weight: 400;\"> condom 12-pack contains 6 delicious flavor experiences in unique colors. Includes: Chocolate Strawberry, Island Punch, Fresh Mint, Bubblegum, Mint Chocolate, and Banana Split. Safe for intercourse and contains no sugars. All ONE\u00ae Condoms feature Sensatex\u00ae ultra-soft latex for a more natural pleasure feeling. Pack of 12 condoms.<br><\/span>",
+                "title": "FlavorWaves Condoms",
+                "site_id": 1262
+            },
+            "productVariantObjects": [
+                {
+                    "id": 150,
+                    "product_id": 25,
+                    "shopify_variant_id": 31357045080146,
+                    "title": "12",
+                    "price": "8.48",
+                    "momentum_value": null,
+                    "created_at": "2022-07-14T20:05:23.000000Z",
+                    "updated_at": "2022-07-14T20:05:23.000000Z",
+                    "sku": "110202",
+                    "is_subscribable": false
+                }
+            ]
+        }
+    },
+    "footer": null,
+    "content": {
+        "value": "<p>This is a long description?<\/p>\n",
+        "checksum": 3660077869,
+        "imageUrlMappings": []
+    },
+    "excerpt": {
+        "value": "<p>This is a short description?<\/p>\n",
+        "checksum": 3545740731
+    },
+    "categories": [],
+    "id": 434,
+    "link": "https:\/\/gpg-staging-wordpress.onecondoms.com\/wp-admin\/post.php?post=434&action=edit",
+    "values": {
+        "longDescription": "<p>This is a long description?<\/p>\n",
+        "shortDescription": "<p>This is a short description?<\/p>\n"
+    },
+    "linkTree": [
+        {
+            "id": 428,
+            "link": "https:\/\/gpg-staging-wordpress.onecondoms.com\/wp-admin\/post.php?post=428&action=edit",
+            "name": "Metadata",
+            "parent": null,
+            "children": []
+        },
+        {
+            "id": 451,
+            "link": "https:\/\/gpg-staging-wordpress.onecondoms.com\/wp-admin\/post.php?post=451&action=edit",
+            "name": "ContentElement",
+            "parent": null,
+            "children": []
+        }
+    ]
+}

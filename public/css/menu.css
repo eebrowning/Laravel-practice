@@ -1,0 +1,11 @@
+nav {
+    border: 2px solid grey;
+
+}
+
+#nav-ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 100%;
+}

@@ -1,0 +1,30 @@
+{
+    "pageType": "ErrorPage",
+    "pageTitle": "404 Error Page",
+    "metadata": null,
+    "header": null,
+    "hero": null,
+    "blocks": null,
+    "contentElement": null,
+    "footer": null,
+    "content": {
+        "value": "",
+        "checksum": 0,
+        "imageUrlMappings": []
+    },
+    "excerpt": {
+        "value": "",
+        "checksum": 0
+    },
+    "categories": [
+        {
+            "id": 1,
+            "name": "Uncategorized",
+            "link": "https:\/\/gpg-staging-wordpress.onecondoms.com\/category\/uncategorized\/"
+        }
+    ],
+    "id": 492,
+    "link": "https:\/\/gpg-staging-wordpress.onecondoms.com\/wp-admin\/post.php?post=492&action=edit",
+    "values": [],
+    "linkTree": []
+}

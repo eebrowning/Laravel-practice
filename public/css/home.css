@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    border: 2px solid grey;
+
+}
+
+#nav-ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 100%;
+}
+
+
+#home-main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#heroes {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+#heroes p>a>img,
+#heroes p>img {
+    height: 250px;
+    width: 33vw;
+    object-fit: contain;
+    border: 1px solid chartreuse;
+}
+
+
+
+
+#blocks {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    box-sizing: border-box;
+    height: 44vw;
+    overflow-y: scroll;
+}
+
+#blocks p {
+    /* width: 100vw;
+    height: 44vw; */
+}
+
+#blocks p>img {
+    /* width: 40%;
+    max-width: min-content; */
+    width: 100vw;
+    height: 44vw;
+}
