@@ -19,6 +19,9 @@
     <div class="error-page">
     
       <h2>Error 404: Page not found</h2>
+ 
+
+      {{print_r($notFound);}}
 
       <div id='error output'>
         Category: {{$notFound['categories'][0]['name']}}

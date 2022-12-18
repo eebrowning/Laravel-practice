@@ -9,15 +9,40 @@ class ProductController extends Controller
 
     public function index()
     {
-        $components= json_decode(file_get_contents(storage_path() . '/components.json'),true);
-            $primary_global_menu = $components[0]["contentElement"];
-            $footer_menu = $components[1]["contentElement"]; 
         $product= json_decode(file_get_contents(storage_path() . '/product.json'),true);
 
-        // echo "<pre>";
-        // print_r($product);
+        $title= $product['pageTitle'];
+        $type= $product['pageType'];
+        $sku= $product['contentElement']['values']['productSku'];
+        $slug= $product['contentElement']['values']['productSlug'];
+        
+    
+        $meta= $product['metadata']['values'];
+            $currency=$product['metadata']['values']['currency'];
+            $twitterSite=$product['metadata']['values']['twitterSite'];
+            $twitterCreator=$product['metadata']['values']['twitterCreator'];
+            $googleCondition=$product['metadata']['values']['googleCondition'];
+            $googleAgeCategory=$product['metadata']['values']['googleAgeCategory'];
+            $googleGenderCategory=$product['metadata']['values']['googleGenderCategory'];
+    
+        $header= $product['header'];
+    
+        $productObject= $product['contentElement']['values']['productObject'];
+        $mediaCollection= $product['contentElement']['values']['mediaCollection'];
+    
+    
 
-        return view("./Product/ProductPage",['product'=>$product,"primary_global_menu"=>$primary_global_menu,'footer_menu'=>$footer_menu]);
+        return view("./Product/ProductPage",[
+            'product'=>$product,
+            'title'=>$title,
+            'type'=>$type,
+            'sku'=>$sku,
+            'slug'=>$slug,
+            'header'=>$header,
+            'productObject'=>$productObject,
+            'mediaCollection'=>$mediaCollection
+
+        ]);
     }
    
 }

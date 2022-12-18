@@ -1,19 +1,4 @@
-@php
-    $product_pages = $catalog['productPages'];
-    $title= $catalog['pageTitle'];
-    $type= $catalog['pageType'];
 
-    $meta= $catalog['metadata'];//blank
-    $sort= $catalog['contentElement']['values']['sort'];
-    $style= $catalog['contentElement']['values']['style'];
-    $footerType= $catalog['contentElement']['values']['footerType'];
-
-    $content= $catalog['contentElement'];
-    $products= $catalog['productPages'];
-
-
-
-@endphp
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>

@@ -18,20 +18,8 @@ Route::get("/", [HomeController::class, "index"]);
 Route::get("/collections/all/catalog", [CatalogController::class, "index"]);
 Route::get('/catalog/{itemId}', [ProductController::class, "index"])->where('itemId','.+');
 
-// Route::get('/404', [ErrorController::class, "index"]);
 Route::any('{any}', [ErrorController::class, "index"])->where('any', '.*');
 
-
-// Route::get('/', function () {
-//     return view('HomePage');
-// });
-// Route::get('/catalog', function () {
-//     // $data = [TestController::class, "index"];
-//     return view('ProductCatalog',['data'=>TestController::class]);
-// });
-// Route::get('/catalog/itemId', function () {
-//     return view('./Product/ProductPage');
-// });
 
 // Build a simple Laravel app that renders pages with data from JSON files.
 // There are four page types: HomePage, ProductCatalog, ProductPage, and Error404. 

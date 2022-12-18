@@ -1,17 +1,3 @@
-@php
-        $pageType = $home['pageType'];
-        $pageTitle = $home['pageTitle'];
-        $metadata = $home['metadata'];
-        $header = $home['header'];
-        
-        $heroes = $home['hero']['values'];//should be able to display these via looping
-        $blocks= $home['blocks']['values'];//loops brother
-        $content= $home['contentElement'];//nothing here, but maybe provide conditional elements on view?
-        $footer = $home['footer'];//null and blank, but here we are, JIC.
-
-@endphp
-
-
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>

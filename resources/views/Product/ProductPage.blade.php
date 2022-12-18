@@ -1,26 +1,4 @@
-@php
-    $title= $product['pageTitle'];
-    $type= $product['pageType'];
-    $sku= $product['contentElement']['values']['productSku'];
-    $slug= $product['contentElement']['values']['productSlug'];
-    
-    $mediaCollection= $product['contentElement']['values']['mediaCollection'];
 
-    $meta= $product['metadata']['values'];
-        $currency=$product['metadata']['values']['currency'];
-        $twitterSite=$product['metadata']['values']['twitterSite'];
-        $twitterCreator=$product['metadata']['values']['twitterCreator'];
-        $googleCondition=$product['metadata']['values']['googleCondition'];
-        $googleAgeCategory=$product['metadata']['values']['googleAgeCategory'];
-        $googleGenderCategory=$product['metadata']['values']['googleGenderCategory'];
-
-    $header= $product['header'];
-
-    $productObject= $product['contentElement']['values']['productObject'];
-    $mediaCollection= $product['contentElement']['values']['mediaCollection'];
-
-
-@endphp
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -49,7 +27,7 @@
             </div>
             
         </div> -->
-        <livewire:alpine-practice />
+        <livewire:alpine-practice :mediaCollection='$mediaCollection'/>
 
         <div class="product-info">
             <h1>{{$title}}</h1>

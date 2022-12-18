@@ -8,16 +8,25 @@ class CatalogController extends Controller
 {
     public function index()
     {
-        $components= json_decode(file_get_contents(storage_path() . '/components.json'),true);
-            $primary_global_menu = $components[0]["contentElement"];
-             $footer_menu = $components[1]["contentElement"]; 
         $catalog= json_decode(file_get_contents(storage_path() . '/catalog.json'),true);
-        $product= json_decode(file_get_contents(storage_path() . '/product.json'),true);
+        $product_pages = $catalog['productPages'];
+        $type= $catalog['pageType'];
+        $title= $catalog['pageTitle'];
+    
+        $meta= $catalog['metadata'];//blank
+        $sort= $catalog['contentElement']['values']['sort'];
+        $style= $catalog['contentElement']['values']['style'];
+        $footerType= $catalog['contentElement']['values']['footerType'];
+    
+        $content= $catalog['contentElement'];
+        $products= $catalog['productPages'];
+    
 
         // echo "<pre>";
         // print_r($catalog);
 
-        return view("./Product/ProductCatalog",['catalog'=>$catalog, "primary_global_menu"=>$primary_global_menu,'footer_menu'=>$footer_menu]);
+        return view("./Product/ProductCatalog",['catalog'=>$catalog,'product_pages'=>$product_pages,'title'=>$title,'type'=>$type,
+        'meta'=>$meta,'sort'=>$sort,'style'=>$style,'footerType'=>$footerType,'content'=>$content,'products'=>$products]);
     }
    
 }

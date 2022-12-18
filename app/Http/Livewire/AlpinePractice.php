@@ -7,13 +7,8 @@ use Livewire\Component;
 class AlpinePractice extends Component
 {
 
-    public $count = 0;
+    public $mediaCollection;
  
-    public function increment()
-    {
-        $this->count++;
-    }
-
 
     public function render()
     {

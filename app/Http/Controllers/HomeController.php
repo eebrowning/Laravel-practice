@@ -6,22 +6,27 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+
+    
     public function index()
     {
-        $components= json_decode(file_get_contents(storage_path() . '/components.json'),true);
-            $primary_global_menu = $components[0]["contentElement"];
-            $footer_menu = $components[1]["contentElement"];    
-            
-
-
         $home = json_decode(file_get_contents(storage_path() . "/home.json"), true);
 
-
+        $pageType = $home['pageType'];
+        $pageTitle = $home['pageTitle'];
+        $metadata = $home['metadata'];
+        $header = $home['header'];
+        
+        $heroes = $home['hero']['values'];//should be able to display these via looping
+        $blocks= $home['blocks']['values'];//loops brother
+        $content= $home['contentElement'];//nothing here, but maybe provide conditional elements on view?
+        $footer = $home['footer'];//null and blank, but here we are, JIC.
 
         // echo "<pre>";
         // print_r($components);
 
-        return view("HomePage",['home'=>$home,'primary_global_menu'=>$primary_global_menu,'footer_menu'=>$footer_menu]);
+        return view("HomePage",['home'=>$home,'pageType'=>$pageType,'pageTitle'=>$pageTitle,'metadata'=>$metadata,'header'=>$header,
+                                    'heroes'=>$heroes,'blocks'=>$blocks,'content'=>$content,'footer'=>$footer]);
     }
    
 }
