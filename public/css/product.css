@@ -1,23 +1,27 @@
 .product-outer {
     display: flex;
     flex-direction: row;
+    border: 1px solid red;
+    align-items: center;
 }
 
-.product-outer img {
+/* .product-outer img {
     height: 200px;
-}
+} */
 
 #image-block {
     width: 55%;
+    height: 50rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 #image-main {
     width: 50vw;
-    height: 50vw;
+    height: 30rem;
 
     object-fit: contain;
 }
